@@ -3,7 +3,7 @@ import codecs
 import os
 
 VERSION = '0.0.1'
-DESCRIPTION = "A visualization package for instant data visualization"
+DESCRIPTION = "A data visualization package for quick visualizations"
 
 # Setting up
 setup(
@@ -13,7 +13,7 @@ setup(
     author_email="<harikaankathi7@gmail.com>",
     description=DESCRIPTION,
     packages=find_packages(),
-    install_requires=['seaborn', 'matplotlib', 'ipywidgets','pandas'],
+    install_requires=['seaborn', 'matplotlib>=3.0.0', 'ipywidgets'],
     keywords=['python', 'visualization'],
 
 )
