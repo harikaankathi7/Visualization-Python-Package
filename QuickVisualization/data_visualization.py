@@ -71,6 +71,6 @@ class visualization:
             elif k=="histogram":
                 widgets.interact(histo,col1=num_col)
             elif k=="heatmap":
-                sns.heatmap(self.d1[numerical_col].corr())
+                sns.heatmap(self.d1[numerical_col].corr(),annot=True, square=True, fmt='0.2f')
                 plt.show()
         widgets.interact(graph,k=chart)
